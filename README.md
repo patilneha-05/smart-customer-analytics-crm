@@ -39,17 +39,19 @@ CRMProject/
 ├── Program.cs
 ├── appsettings.json
 
+
 ⚙️ Installation & Setup
+
 1️⃣ Prerequisites
-Install .NET SDK
-Install MySQL Server
-Install Visual Studio Code
+  - Install .NET SDK
+  - Install MySQL Server
+  - Install Visual Studio Code
 
 (Setup steps inspired from ASP.NET Core practice guide)
 
 2️⃣ Clone Repository
-git clone https://github.com/your-username/smart-crm.git
-cd smart-crm
+  - git clone https://github.com/your-username/smart-crm.git
+  - cd smart-crm
 
 3️⃣ Install Required Packages
   - dotnet add package MySql.Data
@@ -69,11 +71,10 @@ CREATE TABLE customers (
 );
 
 5️⃣ Configure Database Connection
-Update connection string inside CustomerService.cs:
-"Server=localhost;Database=smartcrm;Uid=root;Pwd=yourpassword;"
+  Update connection string inside CustomerService.cs:
+  "Server=localhost;Database=smartcrm;Uid=root;Pwd=yourpassword;"
 6️⃣ Run the Application
-dotnet run
-
+  - dotnet run
 Open browser:
 http://localhost:5019
 
