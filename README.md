@@ -38,8 +38,8 @@ CRMProject/
 ├── wwwroot/
 ├── Program.cs
 ├── appsettings.json
-⚙️ Installation & Setup
 
+⚙️ Installation & Setup
 1️⃣ Prerequisites
 Install .NET SDK
 Install MySQL Server
