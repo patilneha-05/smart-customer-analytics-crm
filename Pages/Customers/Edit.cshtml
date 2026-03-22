@@ -1,0 +1,14 @@
+@page
+@model SmartCRM.Pages.Customers.EditModel
+
+<h2>Edit Customer</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="Customer.Id" />
+
+    <input asp-for="Customer.Name" class="form-control" placeholder="Name" /><br />
+    <input asp-for="Customer.Email" class="form-control" placeholder="Email" /><br />
+    <input asp-for="Customer.Phone" class="form-control" placeholder="Phone" /><br />
+
+    <button class="btn btn-primary">Update</button>
+</form>

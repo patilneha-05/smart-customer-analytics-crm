@@ -1,0 +1,19 @@
+@page
+@model SmartCRM.Pages.Auth.LoginModel
+
+<h2>Login</h2>
+
+<form method="post">
+
+    <input asp-for="LoginUser.Username" class="form-control mb-3" placeholder="Username" />
+    
+    <input asp-for="LoginUser.Password" type="password" class="form-control mb-3" placeholder="Password" />
+
+    <button type="submit" class="btn btn-primary">Login</button>
+
+</form>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <p class="text-danger">@Model.ErrorMessage</p>
+}

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Smart CRM</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+            body {
+                margin: 0;
+                font-family: 'Segoe UI';
+            }
+
+            .sidebar {
+                width: 220px;
+                height: 100vh;
+                position: fixed;
+                background: #1e293b;
+                color: white;
+                padding: 20px;
+            }
+
+            .sidebar a {
+                display: block;
+                color: #cbd5f5;
+                padding: 10px;
+                margin: 5px 0;
+                text-decoration: none;
+                border-radius: 8px;
+            }
+
+            .sidebar a:hover {
+                background: #3b82f6;
+                color: white;
+            }
+
+            .content {
+                margin-left: 240px;
+                padding: 20px;
+            }
+
+            .card-modern {
+                border-radius: 15px;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h4>🚀 Smart CRM</h4>
+
+        <a href="/">🏠 Home</a>
+        <a href="/Customers/Index">👥 Customers</a>
+        <a href="/Customers/Create">➕ Add Customer</a>
+        <a href="/Customers/Dashboard">📊 Dashboard</a>
+        <a href="/Auth/Login">Login</a>
+        <a href="/Auth/Logout">Logout</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        @RenderBody()
+    </div>
+
+</body>
+
+</html>

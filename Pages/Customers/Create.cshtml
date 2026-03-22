@@ -1,0 +1,18 @@
+@page
+@model SmartCRM.Pages.Customers.CreateModel
+
+<h2>Add Customer</h2>
+
+<div class="card card-modern p-4">
+
+<form method="post">
+
+    <input asp-for="Customer.Name" class="form-control mb-3" placeholder="Name" />
+    <input asp-for="Customer.Email" class="form-control mb-3" placeholder="Email" />
+    <input asp-for="Customer.Phone" class="form-control mb-3" placeholder="Phone" />
+
+    <button class="btn btn-primary w-100">Save</button>
+
+</form>
+
+</div>
